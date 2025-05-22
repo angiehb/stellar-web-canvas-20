@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -20,8 +21,8 @@ const HeroSection = () => {
             <Button size="lg" className="bg-white text-primary hover:bg-accent hover:text-primary" onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}>
               Professional Experience
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              View Portfolio
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+              <Link to="/portfolio">View Portfolio</Link>
             </Button>
           </div>
         </div>
