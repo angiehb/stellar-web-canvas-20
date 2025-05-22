@@ -18,13 +18,25 @@ const HeroSection = () => {
             Product leader with deep expertise in building user-centric digital platforms that improve engagement, retention, and business outcomes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-primary hover:bg-accent hover:text-primary" onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white hover:bg-white/30 border border-white" 
+              onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Professional Experience
             </Button>
-            <Button size="lg" variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border border-white" asChild>
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white hover:bg-white/30 border border-white" 
+              asChild
+            >
               <Link to="/portfolio">View Portfolio</Link>
             </Button>
-            <Button size="lg" variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border border-white" onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white hover:bg-white/30 border border-white" 
+              onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Contact Me
             </Button>
           </div>
