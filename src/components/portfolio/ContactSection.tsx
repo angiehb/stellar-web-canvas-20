@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Mail, Phone, MapPin, Linkedin, Send } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -35,7 +34,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-primary text-white">
+    <section id="contact-section" className="py-20 bg-primary text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 font-serif">Get In Touch</h2>

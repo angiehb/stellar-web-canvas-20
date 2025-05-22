@@ -24,6 +24,9 @@ const HeroSection = () => {
             <Button size="lg" variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border border-white" asChild>
               <Link to="/portfolio">View Portfolio</Link>
             </Button>
+            <Button size="lg" variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border border-white" onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}>
+              Contact Me
+            </Button>
           </div>
         </div>
       </div>
