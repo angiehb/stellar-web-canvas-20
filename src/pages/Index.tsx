@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Mail, Phone, MapPin, Linkedin, ExternalLink, Download, Send, BarChart, Users, Lightbulb, Target, Briefcase, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,115 +6,86 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "@/hooks/use-toast";
-
 const Index = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   });
-
-  const skills = [
-    { 
-      name: "Product Leadership", 
-      icon: Briefcase, 
-      items: ["Product Lifecycle Management", "Data-driven Roadmapping", "A/B Testing & Experimentation"] 
-    },
-    { 
-      name: "Digital Experience", 
-      icon: Target, 
-      items: ["UX/UI Optimization", "User Empathy", "Full Funnel Optimization"] 
-    },
-    { 
-      name: "Strategic Growth", 
-      icon: BarChart, 
-      items: ["Digital Transformation", "Market & Customer Research", "Personalization"] 
-    },
-    { 
-      name: "Team Leadership", 
-      icon: Users, 
-      items: ["Cross-Functional Collaboration", "Stakeholder Communication", "Team Coaching"] 
-    },
-  ];
-
-  const projects = [
-    {
-      title: "AHB Consulting",
-      role: "Founder, Product & Design",
-      period: "2023 - Present",
-      description: "Providing product and design consulting to both early-stage startups and established businesses. Leading definition and delivery of new product lines, while advising on and executing strategies for growth.",
-      achievements: [
-        "Defined and delivered a subscription product with 89% retention and 2.7% conversion rate",
-        "Increased site engagement by 30% with a complete site redesign based on user studies",
-        "Established KPIs and led performance tracking that drove actionable insights"
-      ],
-      tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models"]
-    },
-    {
-      title: "WoodSpoon, Inc.",
-      role: "SVP/Head of Product & Design",
-      period: "2021 - 2023",
-      description: "First product hire for a Series A food-tech startup, providing visionary product and strategy leadership for a two-sided marketplace. Led a team of 6 with ownership over chef and diner experiences.",
-      achievements: [
-        "Boosted conversion rates from 3.90% to 5.93% and 2nd order rates from 29.4% to 40.7%",
-        "Drove 78% GMV growth by creating customer-centric product solutions",
-        "Integrated AI-driven support features to streamline user interactions"
-      ],
-      tags: ["Marketplace", "Mobile Apps", "Growth Strategy", "Product Analytics"]
-    },
-    {
-      title: "Food52, Inc.",
-      role: "VP Product & Design",
-      period: "2020 - 2021",
-      description: "Led, mentored, and grew a team of Product Managers, Product Analysts, and Product Designers to deliver digital products across community, media, commerce, retail, advertising, and e-commerce with a multi-million dollar budget.",
-      achievements: [
-        "Delivered a 9% lift in revenue, 6% increase in PDP views, and 169% increase in AOV",
-        "Increased team velocity by 300% by reorganizing product, engineering, and design teams",
-        "Delivered 2.6M additional organic search sessions via SEO improvements"
-      ],
-      tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce"]
-    }
-  ];
-
+  const skills = [{
+    name: "Product Leadership",
+    icon: Briefcase,
+    items: ["Product Lifecycle Management", "Data-driven Roadmapping", "A/B Testing & Experimentation"]
+  }, {
+    name: "Digital Experience",
+    icon: Target,
+    items: ["UX/UI Optimization", "User Empathy", "Full Funnel Optimization"]
+  }, {
+    name: "Strategic Growth",
+    icon: BarChart,
+    items: ["Digital Transformation", "Market & Customer Research", "Personalization"]
+  }, {
+    name: "Team Leadership",
+    icon: Users,
+    items: ["Cross-Functional Collaboration", "Stakeholder Communication", "Team Coaching"]
+  }];
+  const projects = [{
+    title: "AHB Consulting",
+    role: "Founder, Product & Design",
+    period: "2023 - Present",
+    description: "Providing product and design consulting to both early-stage startups and established businesses. Leading definition and delivery of new product lines, while advising on and executing strategies for growth.",
+    achievements: ["Defined and delivered a subscription product with 89% retention and 2.7% conversion rate", "Increased site engagement by 30% with a complete site redesign based on user studies", "Established KPIs and led performance tracking that drove actionable insights"],
+    tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models"]
+  }, {
+    title: "WoodSpoon, Inc.",
+    role: "SVP/Head of Product & Design",
+    period: "2021 - 2023",
+    description: "First product hire for a Series A food-tech startup, providing visionary product and strategy leadership for a two-sided marketplace. Led a team of 6 with ownership over chef and diner experiences.",
+    achievements: ["Boosted conversion rates from 3.90% to 5.93% and 2nd order rates from 29.4% to 40.7%", "Drove 78% GMV growth by creating customer-centric product solutions", "Integrated AI-driven support features to streamline user interactions"],
+    tags: ["Marketplace", "Mobile Apps", "Growth Strategy", "Product Analytics"]
+  }, {
+    title: "Food52, Inc.",
+    role: "VP Product & Design",
+    period: "2020 - 2021",
+    description: "Led, mentored, and grew a team of Product Managers, Product Analysts, and Product Designers to deliver digital products across community, media, commerce, retail, advertising, and e-commerce with a multi-million dollar budget.",
+    achievements: ["Delivered a 9% lift in revenue, 6% increase in PDP views, and 169% increase in AOV", "Increased team velocity by 300% by reorganizing product, engineering, and design teams", "Delivered 2.6M additional organic search sessions via SEO improvements"],
+    tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce"]
+  }];
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
+      description: "Thank you for your message. I'll get back to you soon."
     });
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    });
   };
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   };
-
-  const education = [
-    {
-      degree: "MBA",
-      institution: "Columbia University",
-      location: "New York, NY",
-      focus: "Entrepreneurship, Strategic Frameworks, Financial Modeling"
-    },
-    {
-      degree: "B.S.",
-      institution: "New Jersey Institute of Technology",
-      location: "Newark, NJ",
-      focus: "Management Information Systems"
-    },
-    {
-      degree: "Design Thinking Bootcamp",
-      institution: "Stanford d.School",
-      location: "Stanford, CA",
-      focus: "Human-centered design techniques"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const education = [{
+    degree: "MBA",
+    institution: "Columbia University",
+    location: "New York, NY",
+    focus: "Entrepreneurship, Strategic Frameworks, Financial Modeling"
+  }, {
+    degree: "B.S.",
+    institution: "New Jersey Institute of Technology",
+    location: "Newark, NJ",
+    focus: "Management Information Systems"
+  }, {
+    degree: "Design Thinking Bootcamp",
+    institution: "Stanford d.School",
+    location: "Stanford, CA",
+    focus: "Human-centered design techniques"
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-primary to-primary/80 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1604782206219-3b9576575203?q=80&w=1974')] bg-cover bg-center opacity-10"></div>
@@ -150,11 +120,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 font-serif">About Me</h2>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" 
-                  alt="Professional woman"
-                  className="rounded-2xl shadow-xl w-full max-w-md mx-auto object-cover h-96"
-                />
+                <img alt="Professional woman" src="/lovable-uploads/fdc9f316-7d94-40c6-9095-e40932bad95c.jpg" className="rounded-2xl shadow-xl w-full max-w-md mx-auto h-96 object-cover" />
               </div>
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -180,8 +146,7 @@ const Index = () => {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 font-serif">Core Competencies</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {skills.map((skill, index) => (
-                <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300 border-none">
+              {skills.map((skill, index) => <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300 border-none">
                   <CardHeader className="pb-4 text-center">
                     <div className="bg-primary/5 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <skill.icon className="h-8 w-8 text-primary" />
@@ -190,16 +155,13 @@ const Index = () => {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2 text-gray-600">
-                      {skill.items.map((item, i) => (
-                        <li key={i} className="flex items-start">
+                      {skill.items.map((item, i) => <li key={i} className="flex items-start">
                           <div className="h-2 w-2 rounded-full bg-primary/70 mt-2 mr-2"></div>
                           <span>{item}</span>
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -211,8 +173,7 @@ const Index = () => {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 font-serif">Professional Experience</h2>
             <div className="space-y-12">
-              {projects.map((project, index) => (
-                <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300">
+              {projects.map((project, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300">
                   <div className="border-l-4 border-primary/70">
                     <CardHeader className="pb-3">
                       <div className="flex flex-wrap justify-between items-start gap-2">
@@ -226,24 +187,19 @@ const Index = () => {
                       <p className="mb-4 text-gray-700">{project.description}</p>
                       <h4 className="font-medium text-gray-900 mb-2">Key Achievements:</h4>
                       <ul className="space-y-2 mb-4">
-                        {project.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start text-gray-700">
+                        {project.achievements.map((achievement, i) => <li key={i} className="flex items-start text-gray-700">
                             <div className="h-1.5 w-1.5 rounded-full bg-primary/70 mt-2 mr-2"></div>
                             <span>{achievement}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                       <div className="flex flex-wrap gap-2 mt-4">
-                        {project.tags.map((tag, tagIndex) => (
-                          <Badge key={tagIndex} variant="outline" className="bg-accent/50 border-primary/10 text-primary/80">
+                        {project.tags.map((tag, tagIndex) => <Badge key={tagIndex} variant="outline" className="bg-accent/50 border-primary/10 text-primary/80">
                             {tag}
-                          </Badge>
-                        ))}
+                          </Badge>)}
                       </div>
                     </CardContent>
                   </div>
-                </Card>
-              ))}
+                </Card>)}
               
               <div className="flex justify-center mt-8">
                 <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/5">
@@ -261,8 +217,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 font-serif">Education & Certifications</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {education.map((edu, index) => (
-                <Card key={index} className="bg-white border-none hover:shadow-lg transition-shadow duration-300">
+              {education.map((edu, index) => <Card key={index} className="bg-white border-none hover:shadow-lg transition-shadow duration-300">
                   <CardHeader className="pb-4">
                     <div className="mb-3 flex justify-center">
                       <GraduationCap className="h-10 w-10 text-primary/70" />
@@ -276,8 +231,7 @@ const Index = () => {
                       <span className="text-sm text-gray-600 mt-1 block">{edu.focus}</span>
                     </p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
             
             <div className="mt-12 bg-white p-8 rounded-xl shadow-sm">
@@ -344,32 +298,9 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <Input
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                      required
-                    />
-                    <Input
-                      name="email"
-                      type="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                      required
-                    />
-                    <Textarea
-                      name="message"
-                      placeholder="Your Message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={4}
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                      required
-                    />
+                    <Input name="name" placeholder="Your Name" value={formData.name} onChange={handleInputChange} className="bg-white/20 border-white/30 text-white placeholder:text-white/70" required />
+                    <Input name="email" type="email" placeholder="Your Email" value={formData.email} onChange={handleInputChange} className="bg-white/20 border-white/30 text-white placeholder:text-white/70" required />
+                    <Textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleInputChange} rows={4} className="bg-white/20 border-white/30 text-white placeholder:text-white/70" required />
                     <Button type="submit" className="w-full bg-white text-primary hover:bg-accent hover:text-primary">
                       <Send className="mr-2 h-4 w-4" />
                       Send Message
@@ -390,8 +321,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
