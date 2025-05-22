@@ -8,34 +8,56 @@ const HeroSection = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 z-0"></div>
       
-      {/* Decorative shapes */}
+      {/* Abstract decorative shapes */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        {/* Large circle */}
+        {/* Blob shape 1 */}
         <div 
-          className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-white/5 backdrop-blur-sm"
-          style={{ transform: "rotate(-15deg)" }}
+          className="absolute -top-60 -left-40 w-[500px] h-[500px] opacity-10"
+          style={{ 
+            background: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%)',
+            transform: 'rotate(15deg)' 
+          }}
         ></div>
         
-        {/* Rectangle */}
+        {/* Organic curve */}
         <div 
-          className="absolute top-1/4 right-10 w-64 h-64 bg-white/3 rounded-lg"
-          style={{ transform: "rotate(45deg)" }}
+          className="absolute top-20 right-0 w-[400px] h-[600px] opacity-5"
+          style={{ 
+            background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%)',
+            borderRadius: '70% 30% 50% 50% / 30% 60% 40% 70%'
+          }}
         ></div>
         
-        {/* Small circle */}
+        {/* Wavy pattern */}
         <div 
-          className="absolute bottom-20 left-1/4 w-32 h-32 rounded-full bg-white/5"
+          className="absolute bottom-10 left-1/4 w-[300px] h-[300px] opacity-10"
+          style={{ 
+            background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%)',
+            borderRadius: '63% 37% 54% 46% / 55% 48% 52% 45%'
+          }}
         ></div>
         
-        {/* Blurred dot */}
+        {/* Nebula-like blob */}
         <div 
-          className="absolute top-1/3 left-1/3 w-16 h-16 rounded-full bg-white/10 blur-xl"
+          className="absolute top-1/3 left-1/3 w-[200px] h-[200px] rounded-full bg-white/5 blur-2xl"
         ></div>
         
-        {/* Another rectangle */}
+        {/* Abstract wing shape */}
         <div 
-          className="absolute -bottom-20 right-1/3 w-48 h-48 bg-white/3"
-          style={{ transform: "rotate(30deg)" }}
+          className="absolute -bottom-40 right-1/4 w-[400px] h-[400px] opacity-5"
+          style={{ 
+            background: 'conic-gradient(from 180deg at 50% 50%, rgba(255,255,255,0.1) 0deg, rgba(255,255,255,0) 360deg)',
+            borderRadius: '30% 70% 70% 30% / 30% 52% 48% 70%',
+            transform: 'rotate(-10deg)'
+          }}
+        ></div>
+        
+        {/* Soft light spot */}
+        <div
+          className="absolute top-20 left-20 w-40 h-40 rounded-full opacity-10 blur-3xl"
+          style={{
+            background: 'radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%)'
+          }}
         ></div>
       </div>
       
