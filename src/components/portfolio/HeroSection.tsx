@@ -8,33 +8,33 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[url('/lovable-uploads/4671a083-5af9-417a-9b65-4ab3a82f72e2.png')] bg-cover bg-center"></div>
       <div className="relative container mx-auto px-6 py-24 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 font-serif text-white">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-6 font-serif text-navy-900">
             Angie Hanna-Bugueiro
           </h1>
-          <p className="text-xl lg:text-2xl mb-8 font-light text-white">
+          <p className="text-xl lg:text-2xl mb-8 font-light text-navy-800">
             SVP/VP Digital Product & Design Leader
           </p>
-          <p className="text-lg mb-10 max-w-2xl mx-auto text-white">
+          <p className="text-lg mb-10 max-w-2xl mx-auto text-navy-800">
             Product leader with deep expertise in building user-centric digital platforms that improve engagement, retention, and business outcomes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white" 
+              className="bg-white/20 text-navy-900 hover:bg-accent hover:text-accent-foreground border border-navy-800" 
               onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Professional Experience
             </Button>
             <Button 
               size="lg" 
-              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white" 
+              className="bg-white/20 text-navy-900 hover:bg-accent hover:text-accent-foreground border border-navy-800" 
               asChild
             >
               <Link to="/portfolio">View Portfolio</Link>
             </Button>
             <Button 
               size="lg" 
-              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white" 
+              className="bg-white/20 text-navy-900 hover:bg-accent hover:text-accent-foreground border border-navy-800" 
               onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Me
