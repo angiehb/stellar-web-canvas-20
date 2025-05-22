@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-primary to-primary/80 text-white">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/4671a083-5af9-417a-9b65-4ab3a82f72e2.png')] bg-cover bg-center opacity-10"></div>
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/4671a083-5af9-417a-9b65-4ab3a82f72e2.png')] bg-cover bg-center"></div>
       <div className="relative container mx-auto px-6 py-24 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 font-serif">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-6 font-serif text-white">
             Angie Hanna-Bugueiro
           </h1>
-          <p className="text-xl lg:text-2xl mb-8 font-light">
+          <p className="text-xl lg:text-2xl mb-8 font-light text-white">
             SVP/VP Digital Product & Design Leader
           </p>
-          <p className="text-lg mb-10 max-w-2xl mx-auto opacity-90">
+          <p className="text-lg mb-10 max-w-2xl mx-auto text-white">
             Product leader with deep expertise in building user-centric digital platforms that improve engagement, retention, and business outcomes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
