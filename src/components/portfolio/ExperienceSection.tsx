@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 interface Project {
   title: string;
@@ -81,8 +82,8 @@ const ExperienceSection = () => {
             ))}
             
             <div className="flex justify-center mt-8">
-              <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/5">
-                View More Experience
+              <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/5" asChild>
+                <Link to="/experience">View More Experience</Link>
               </Button>
             </div>
           </div>
