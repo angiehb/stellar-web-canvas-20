@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-primary to-primary/80 text-white">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1604782206219-3b9576575203?q=80&w=1974')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')] bg-cover bg-center opacity-10"></div>
       <div className="relative container mx-auto px-6 py-24 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 font-serif">
