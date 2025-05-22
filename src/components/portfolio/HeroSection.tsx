@@ -21,7 +21,7 @@ const HeroSection = () => {
             <Button size="lg" className="bg-white text-primary hover:bg-accent hover:text-primary" onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}>
               Professional Experience
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+            <Button size="lg" variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border border-white" asChild>
               <Link to="/portfolio">View Portfolio</Link>
             </Button>
           </div>
