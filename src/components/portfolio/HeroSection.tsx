@@ -67,10 +67,10 @@ const HeroSection = () => {
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 font-serif text-white">
             Angie Hanna-Bugueiro
           </h1>
-          <p className="text-xl lg:text-2xl mb-8 font-light text-gray-300">
+          <p className="text-xl lg:text-2xl mb-8 font-light text-gray-400">
             SVP/VP Digital Product & Design Leader
           </p>
-          <p className="text-lg mb-10 max-w-2xl mx-auto text-gray-300">
+          <p className="text-lg mb-10 max-w-2xl mx-auto text-gray-400">
             Product leader with deep expertise in building user-centric digital platforms that improve engagement, retention, and business outcomes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
