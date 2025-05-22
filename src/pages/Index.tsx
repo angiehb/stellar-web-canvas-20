@@ -101,9 +101,8 @@ const Index = () => {
               Product leader with deep expertise in building user-centric digital platforms that improve engagement, retention, and business outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-accent hover:text-primary">
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
+              <Button size="lg" className="bg-white text-primary hover:bg-accent hover:text-primary" onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}>
+                Professional Experience
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 View Portfolio
@@ -168,7 +167,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 bg-white">
+      <section id="professional-experience" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 font-serif">Professional Experience</h2>
