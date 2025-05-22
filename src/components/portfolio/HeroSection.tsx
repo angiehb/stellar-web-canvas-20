@@ -76,21 +76,21 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white/20 text-white hover:bg-white/30 border border-white/30" 
+              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
               onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Professional Experience
             </Button>
             <Button 
               size="lg" 
-              className="bg-white/20 text-white hover:bg-white/30 border border-white/30" 
+              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
               asChild
             >
               <Link to="/portfolio">View Portfolio</Link>
             </Button>
             <Button 
               size="lg" 
-              className="bg-white/20 text-white hover:bg-white/30 border border-white/30" 
+              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
               onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Me
