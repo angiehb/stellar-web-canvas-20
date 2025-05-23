@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -45,6 +44,10 @@ const ExperienceSection = () => {
       icon: Utensils
     }
   ];
+
+  const handleViewMoreClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <section id="professional-experience" className="py-20 bg-white">
@@ -96,7 +99,7 @@ const ExperienceSection = () => {
             
             <div className="flex justify-center mt-8">
               <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/5" asChild>
-                <Link to="/experience">View More Experience</Link>
+                <Link to="/experience" onClick={handleViewMoreClick}>View More Experience</Link>
               </Button>
             </div>
           </div>

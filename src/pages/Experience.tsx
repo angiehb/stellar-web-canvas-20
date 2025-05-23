@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -128,7 +127,7 @@ const ExperiencePage = () => {
           <div className="mb-12">
             <Link to="/" className="inline-flex items-center text-primary hover:underline mb-2">
               <ChevronLeft className="mr-1 h-4 w-4" />
-              Back to Portfolio
+              Back to Homepage
             </Link>
             <h1 className="text-4xl font-bold text-gray-900 font-serif">Complete Professional Experience</h1>
             <p className="text-lg text-gray-700 mt-2">A comprehensive overview of my career journey and accomplishments.</p>
