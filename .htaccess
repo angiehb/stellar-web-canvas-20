@@ -1,27 +1,60 @@
 
 # Force proper MIME types for JavaScript files
-AddType text/javascript .js
-AddType text/javascript .mjs
+AddType application/javascript .js
+AddType application/javascript .mjs
 AddType application/json .json
+AddType text/css .css
 
-# Enable ES6 modules
+# Fallback for ES6 modules
 <Files "*.js">
-    Header set Content-Type "text/javascript"
+    Header set Content-Type "application/javascript"
 </Files>
 
 <Files "*.mjs">
-    Header set Content-Type "text/javascript"
+    Header set Content-Type "application/javascript"
 </Files>
+
+<Files "*.json">
+    Header set Content-Type "application/json"
+</Files>
+
+# Handle client-side routing for SPA
+RewriteEngine On
+RewriteBase /
+
+# Handle Angular and React Router
+# Don't rewrite files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rewrite everything else to index.html to allow HTML5 state links
+RewriteRule ^ index.html [L]
 
 # Cache control for static assets
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType text/javascript "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
 </IfModule>
 
-# Enable compression for JavaScript files
+# Enable compression for JavaScript and CSS files
 <IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/javascript
     AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
 </IfModule>
