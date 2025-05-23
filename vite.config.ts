@@ -24,10 +24,13 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        format: 'es',
       },
     },
     outDir: 'dist',
     sourcemap: false,
+    target: 'esnext',
+    minify: false,
   },
-  base: './',
+  base: '/',
 }));
