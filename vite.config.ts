@@ -9,6 +9,9 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    fs: {
+      strict: false
+    }
   },
   plugins: [
     react(),
@@ -35,6 +38,12 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     target: 'es2015',
     minify: true,
+  },
+  assetsInclude: ['**/*.tsx', '**/*.ts'],
+  esbuild: {
+    loader: 'tsx',
+    include: /src\/.*\.[tj]sx?$/,
+    exclude: []
   },
   base: './',
 }));
