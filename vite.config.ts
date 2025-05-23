@@ -9,9 +9,6 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    fs: {
-      strict: false
-    }
   },
   plugins: [
     react(),
@@ -22,28 +19,12 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
   },
   build: {
     rollupOptions: {
       output: {
         manualChunks: undefined,
-        format: 'es',
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
       },
     },
-    outDir: 'dist',
-    sourcemap: false,
-    target: 'es2015',
-    minify: true,
   },
-  assetsInclude: ['**/*.tsx', '**/*.ts'],
-  esbuild: {
-    loader: 'tsx',
-    include: /src\/.*\.[tj]sx?$/,
-    exclude: []
-  },
-  base: './',
 }));
