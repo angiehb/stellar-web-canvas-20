@@ -1,0 +1,27 @@
+
+# Force proper MIME types for JavaScript files
+AddType text/javascript .js
+AddType text/javascript .mjs
+AddType application/json .json
+
+# Enable ES6 modules
+<Files "*.js">
+    Header set Content-Type "text/javascript"
+</Files>
+
+<Files "*.mjs">
+    Header set Content-Type "text/javascript"
+</Files>
+
+# Cache control for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Enable compression for JavaScript files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+</IfModule>
