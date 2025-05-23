@@ -31,4 +31,14 @@ export default defineConfig(({ mode }) => ({
     minify: true,
   },
   base: '/',
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'es2020',
+    },
+  },
+  esbuild: {
+    // Ensures proper module type processing
+    platform: 'browser', 
+    target: 'es2020',
+  },
 }));
