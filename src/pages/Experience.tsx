@@ -2,9 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Building2, Utensils, ShoppingBag, Sparkles, Store, Shirt } from "lucide-react";
 
 interface Experience {
   company: string;
@@ -14,8 +13,7 @@ interface Experience {
   description: string;
   achievements: string[];
   tags: string[];
-  logoUrl: string;
-  logoAlt: string;
+  icon: React.ComponentType<{ className?: string }>;
 }
 
 const ExperiencePage = () => {
@@ -38,8 +36,7 @@ const ExperiencePage = () => {
         "Increased social engagement by creating strategic content and delivered marketing strategies to acquire new clients"
       ],
       tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models", "Design Consulting", "Roadmap Prioritization"],
-      logoUrl: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop&crop=center",
-      logoAlt: "AHB Consulting Logo"
+      icon: Building2
     },
     {
       company: "WOODSPOON, INC.",
@@ -58,8 +55,7 @@ const ExperiencePage = () => {
         "Explored partnership strategies with DoorDash and CookUnity for marketplace scale and growth"
       ],
       tags: ["Marketplace", "Mobile Apps", "Growth Strategy", "Product Analytics", "Team Leadership", "Series A Startup"],
-      logoUrl: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=100&h=100&fit=crop&crop=center",
-      logoAlt: "WoodSpoon Logo"
+      icon: Utensils
     },
     {
       company: "FOOD52, INC.",
@@ -75,8 +71,7 @@ const ExperiencePage = () => {
         "Implemented a new product roadmap process that incorporated stakeholder collaboration to gain alignment on prioritization with a focus on speed and agility"
       ],
       tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce", "Product Roadmapping", "Media"],
-      logoUrl: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=100&h=100&fit=crop&crop=center",
-      logoAlt: "Food52 Logo"
+      icon: Utensils
     },
     {
       company: "GLOSSIER, INC.",
@@ -92,8 +87,7 @@ const ExperiencePage = () => {
         "Defined Product Management and Engineering best practices to develop a world-class product team and to efficiently and effectively deliver new features and capabilities while reducing the number of defects"
       ],
       tags: ["Customer Service", "Retail Systems", "Product Strategy", "Enterprise Tools", "Operational Efficiency"],
-      logoUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=100&h=100&fit=crop&crop=center",
-      logoAlt: "Glossier Logo"
+      icon: Sparkles
     },
     {
       company: "GAP, INC.",
@@ -109,8 +103,7 @@ const ExperiencePage = () => {
         "Led product management for performance marketing, content management systems (CMS), customer relationship management (CRM), and data analytics products"
       ],
       tags: ["B2B", "SaaS Platforms", "Loyalty Programs", "International Business", "Mobile Apps", "Financial Modeling"],
-      logoUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop&crop=center",
-      logoAlt: "Gap Inc Logo"
+      icon: Shirt
     },
     {
       company: "MACYS, INC.",
@@ -124,8 +117,7 @@ const ExperiencePage = () => {
         "Worked with Deloitte and other consulting firms to deliver scalable product solutions"
       ],
       tags: ["E-Commerce", "Marketing", "Omnichannel", "Process Optimization", "Photography", "Content Management"],
-      logoUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop&crop=center",
-      logoAlt: "Macy's Logo"
+      icon: Store
     }
   ];
 
@@ -143,49 +135,49 @@ const ExperiencePage = () => {
           </div>
 
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300">
-                <div className="border-l-4 border-primary/70">
-                  <CardHeader className="pb-3">
-                    <div className="flex flex-wrap justify-between items-start gap-2">
-                      <div>
-                        <CardTitle className="text-2xl font-serif flex items-center gap-3">
-                          <Avatar className="h-8 w-8">
-                            <AvatarImage src={exp.logoUrl} alt={exp.logoAlt} />
-                            <AvatarFallback className="text-xs font-bold bg-primary/10 text-primary">
-                              {exp.company.split(' ').map(word => word[0]).join('').slice(0, 2)}
-                            </AvatarFallback>
-                          </Avatar>
-                          {exp.company}
-                        </CardTitle>
-                        <CardDescription className="text-base font-medium mt-1">
-                          {exp.title} | {exp.period} | {exp.location}
-                        </CardDescription>
+            {experiences.map((exp, index) => {
+              const IconComponent = exp.icon;
+              return (
+                <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300">
+                  <div className="border-l-4 border-primary/70">
+                    <CardHeader className="pb-3">
+                      <div className="flex flex-wrap justify-between items-start gap-2">
+                        <div>
+                          <CardTitle className="text-2xl font-serif flex items-center gap-3">
+                            <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center">
+                              <IconComponent className="h-4 w-4 text-primary" />
+                            </div>
+                            {exp.company}
+                          </CardTitle>
+                          <CardDescription className="text-base font-medium mt-1">
+                            {exp.title} | {exp.period} | {exp.location}
+                          </CardDescription>
+                        </div>
                       </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    <p className="mb-4 text-gray-700">{exp.description}</p>
-                    <h4 className="font-medium text-gray-900 mb-2">Key Achievements:</h4>
-                    <ul className="space-y-2 mb-4">
-                      {exp.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start text-gray-700">
-                          <div className="h-1.5 w-1.5 rounded-full bg-primary/70 mt-2 mr-2"></div>
-                          <span>{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {exp.tags.map((tag, tagIndex) => (
-                        <Badge key={tagIndex} variant="outline" className="bg-accent/50 border-primary/10 text-primary/80">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </div>
-              </Card>
-            ))}
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <p className="mb-4 text-gray-700">{exp.description}</p>
+                      <h4 className="font-medium text-gray-900 mb-2">Key Achievements:</h4>
+                      <ul className="space-y-2 mb-4">
+                        {exp.achievements.map((achievement, i) => (
+                          <li key={i} className="flex items-start text-gray-700">
+                            <div className="h-1.5 w-1.5 rounded-full bg-primary/70 mt-2 mr-2"></div>
+                            <span>{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {exp.tags.map((tag, tagIndex) => (
+                          <Badge key={tagIndex} variant="outline" className="bg-accent/50 border-primary/10 text-primary/80">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>
