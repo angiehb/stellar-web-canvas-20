@@ -5,40 +5,22 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' &&
     componentTagger(),
-  ].filter(Boolean),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
     outDir: 'dist',
     sourcemap: false,
-    minify: true,
   },
-  base: '/',
-  optimizeDeps: {
-    esbuildOptions: {
-      target: 'es2020',
-    },
-  },
-  esbuild: {
-    // Ensures proper module type processing
-    platform: 'browser', 
-    target: 'es2020',
-  },
-}));
+});
