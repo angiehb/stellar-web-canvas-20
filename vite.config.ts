@@ -25,12 +25,15 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: undefined,
         format: 'es',
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
+        assetFileNames: '[name].[ext]'
       },
     },
     outDir: 'dist',
     sourcemap: false,
-    target: 'esnext',
-    minify: false,
+    target: 'es2015',
+    minify: true,
   },
-  base: '/',
+  base: './',
 }));
