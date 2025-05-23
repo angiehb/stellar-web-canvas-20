@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 
 const AboutSection = () => {
@@ -20,8 +19,8 @@ const AboutSection = () => {
               </p>
               <div className="flex flex-wrap gap-3 pt-3">
                 <Badge variant="outline" className="px-3 py-1 border-primary/20 bg-accent text-primary">B2C & D2C Experience</Badge>
-                <Badge variant="outline" className="px-3 py-1 border-primary/20 bg-accent text-primary">P&L Ownership</Badge>
-                <Badge variant="outline" className="px-3 py-1 border-primary/20 bg-accent text-primary">International Business</Badge>
+                <Badge variant="outline" className="px-3 py-1 border-primary/20 bg-accent text-primary">Marketplaces</Badge>
+                <Badge variant="outline" className="px-3 py-1 border-primary/20 bg-accent text-primary">B2B SaaS</Badge>
               </div>
             </div>
           </div>
