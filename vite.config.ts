@@ -26,5 +26,9 @@ export default defineConfig(({ mode }) => ({
         manualChunks: undefined,
       },
     },
+    outDir: 'dist',
+    sourcemap: false,
+    minify: true,
   },
+  base: '/',
 }));
