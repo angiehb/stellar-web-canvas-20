@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 
@@ -13,6 +14,8 @@ interface Experience {
   description: string;
   achievements: string[];
   tags: string[];
+  logoUrl: string;
+  logoAlt: string;
 }
 
 const ExperiencePage = () => {
@@ -34,7 +37,9 @@ const ExperiencePage = () => {
         "Increased site engagement by 30% with a complete site redesign based on user studies and market insights",
         "Increased social engagement by creating strategic content and delivered marketing strategies to acquire new clients"
       ],
-      tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models", "Design Consulting", "Roadmap Prioritization"]
+      tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models", "Design Consulting", "Roadmap Prioritization"],
+      logoUrl: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop&crop=center",
+      logoAlt: "AHB Consulting Logo"
     },
     {
       company: "WOODSPOON, INC.",
@@ -52,7 +57,9 @@ const ExperiencePage = () => {
         "Integrated AI-driven support features to streamline user interactions and improve and scale service efficiency",
         "Explored partnership strategies with DoorDash and CookUnity for marketplace scale and growth"
       ],
-      tags: ["Marketplace", "Mobile Apps", "Growth Strategy", "Product Analytics", "Team Leadership", "Series A Startup"]
+      tags: ["Marketplace", "Mobile Apps", "Growth Strategy", "Product Analytics", "Team Leadership", "Series A Startup"],
+      logoUrl: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=100&h=100&fit=crop&crop=center",
+      logoAlt: "WoodSpoon Logo"
     },
     {
       company: "FOOD52, INC.",
@@ -67,7 +74,9 @@ const ExperiencePage = () => {
         "Launched live commerce experiments to engage users in real-time, resulting in a company-wide initiative",
         "Implemented a new product roadmap process that incorporated stakeholder collaboration to gain alignment on prioritization with a focus on speed and agility"
       ],
-      tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce", "Product Roadmapping", "Media"]
+      tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce", "Product Roadmapping", "Media"],
+      logoUrl: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=100&h=100&fit=crop&crop=center",
+      logoAlt: "Food52 Logo"
     },
     {
       company: "GLOSSIER, INC.",
@@ -82,7 +91,9 @@ const ExperiencePage = () => {
         "Led the development of a clienteling experiment to monetize interactions with customer service team",
         "Defined Product Management and Engineering best practices to develop a world-class product team and to efficiently and effectively deliver new features and capabilities while reducing the number of defects"
       ],
-      tags: ["Customer Service", "Retail Systems", "Product Strategy", "Enterprise Tools", "Operational Efficiency"]
+      tags: ["Customer Service", "Retail Systems", "Product Strategy", "Enterprise Tools", "Operational Efficiency"],
+      logoUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=100&h=100&fit=crop&crop=center",
+      logoAlt: "Glossier Logo"
     },
     {
       company: "GAP, INC.",
@@ -97,7 +108,9 @@ const ExperiencePage = () => {
         "Developed business cases and financial models to secure project funding",
         "Led product management for performance marketing, content management systems (CMS), customer relationship management (CRM), and data analytics products"
       ],
-      tags: ["B2B", "SaaS Platforms", "Loyalty Programs", "International Business", "Mobile Apps", "Financial Modeling"]
+      tags: ["B2B", "SaaS Platforms", "Loyalty Programs", "International Business", "Mobile Apps", "Financial Modeling"],
+      logoUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=100&h=100&fit=crop&crop=center",
+      logoAlt: "Gap Inc Logo"
     },
     {
       company: "MACYS, INC.",
@@ -110,7 +123,9 @@ const ExperiencePage = () => {
         "Improved studio and photography work in process through a SaaS Photo selection tool saving 70% on process time and achieving a 100% return on investment",
         "Worked with Deloitte and other consulting firms to deliver scalable product solutions"
       ],
-      tags: ["E-Commerce", "Marketing", "Omnichannel", "Process Optimization", "Photography", "Content Management"]
+      tags: ["E-Commerce", "Marketing", "Omnichannel", "Process Optimization", "Photography", "Content Management"],
+      logoUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop&crop=center",
+      logoAlt: "Macy's Logo"
     }
   ];
 
@@ -134,7 +149,15 @@ const ExperiencePage = () => {
                   <CardHeader className="pb-3">
                     <div className="flex flex-wrap justify-between items-start gap-2">
                       <div>
-                        <CardTitle className="text-2xl font-serif">{exp.company}</CardTitle>
+                        <CardTitle className="text-2xl font-serif flex items-center gap-3">
+                          <Avatar className="h-8 w-8">
+                            <AvatarImage src={exp.logoUrl} alt={exp.logoAlt} />
+                            <AvatarFallback className="text-xs font-bold bg-primary/10 text-primary">
+                              {exp.company.split(' ').map(word => word[0]).join('').slice(0, 2)}
+                            </AvatarFallback>
+                          </Avatar>
+                          {exp.company}
+                        </CardTitle>
                         <CardDescription className="text-base font-medium mt-1">
                           {exp.title} | {exp.period} | {exp.location}
                         </CardDescription>
