@@ -21,7 +21,7 @@ const ExperienceSection = () => {
       period: "2023 - Present",
       description: "Providing product and design consulting to both early-stage startups and established businesses. Leading definition and delivery of new product lines, while advising on and executing strategies for growth.",
       achievements: ["Defined and delivered a subscription product with 89% retention and 2.7% conversion rate", "Increased site engagement by 30% with a complete site redesign based on user studies", "Established KPIs and led performance tracking that drove actionable insights"],
-      tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models", "P&L Ownership"]
+      tags: ["Product Strategy", "User Research", "AI Integration", "Subscription Models"]
     }, 
     {
       title: "WoodSpoon, Inc.",
@@ -37,7 +37,7 @@ const ExperienceSection = () => {
       period: "2020 - 2021",
       description: "Led, mentored, and grew a team of Product Managers, Product Analysts, and Product Designers to deliver digital products across community, media, commerce, retail, advertising, and e-commerce with a multi-million dollar budget.",
       achievements: ["Delivered a 9% lift in revenue, 6% increase in PDP views, and 169% increase in AOV", "Increased team velocity by 300% by reorganizing product, engineering, and design teams", "Delivered 2.6M additional organic search sessions via SEO improvements"],
-      tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce", "P&L Ownership"]
+      tags: ["E-commerce", "Team Leadership", "SEO Optimization", "Live Commerce"]
     }
   ];
 
