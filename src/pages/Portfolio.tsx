@@ -105,7 +105,7 @@ const Portfolio = () => {
 
           {projectCases.map((project) => (
             <TabsContent key={project.id} value={project.id} className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div>
                   <Card>
                     <CardHeader>
@@ -150,22 +150,22 @@ const Portfolio = () => {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative w-full min-h-[400px] rounded-lg overflow-hidden bg-background flex items-start justify-center">
+                <div className="w-full rounded-lg overflow-hidden bg-background">
                   {project.images.length === 1 ? (
                     <img 
                       src={project.images[0]} 
                       alt={project.title}
-                      className="max-w-full max-h-full w-auto h-auto object-contain"
+                      className="w-full h-auto object-contain"
                     />
                   ) : (
-                    <Carousel className="w-full h-full">
+                    <Carousel className="w-full">
                       <CarouselContent>
                         {project.images.map((image, index) => (
-                          <CarouselItem key={index} className="flex items-start justify-center">
+                          <CarouselItem key={index}>
                             <img 
                               src={image} 
                               alt={`${project.title} - Image ${index + 1}`}
-                              className="max-w-full max-h-full w-auto h-auto object-contain"
+                              className="w-full h-auto object-contain"
                             />
                           </CarouselItem>
                         ))}
