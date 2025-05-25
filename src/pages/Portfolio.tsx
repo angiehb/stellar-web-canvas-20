@@ -44,10 +44,9 @@ const projectCases: ProjectCase[] = [
     problem: "After securing a $14M Series A round of funding, this 2-sided food-tech marketplace was struggling to retain customers. Analysis showed that while Chef (supply side) retention was near 100%, only 29.4% of Diners (demand side) were placing second orders. Customer acquisition costs were extremely high signaling a product-market fit issue.",
     solution: "Conducted deep user behavior and customer insights research and analysis to understand why customers were not converting and/or not returning. Defined a customer-centric roadmap that prioritized articulating value and uniqueness of the product while removing user friction. Worked with marketing to improve messaging and targeting.",
     impact: [
-      "Increased chef retention by 65%",
       "Improved 2nd order rates from 29.4% to 40.7%",
       "Achieved 78% GMV growth year-over-year",
-      "Expanded marketplace to 3 new cities with optimized model"
+      "Boosted conversion rates from 3.90% to 5.93%"
     ],
     imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2584"
   },
