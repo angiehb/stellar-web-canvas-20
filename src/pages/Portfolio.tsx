@@ -150,22 +150,22 @@ const Portfolio = () => {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+                <div className="relative w-full min-h-[400px] rounded-lg overflow-hidden bg-muted flex items-center justify-center">
                   {project.images.length === 1 ? (
                     <img 
                       src={project.images[0]} 
                       alt={project.title}
-                      className="w-full h-full object-contain"
+                      className="max-w-full max-h-full w-auto h-auto object-contain"
                     />
                   ) : (
                     <Carousel className="w-full h-full">
                       <CarouselContent>
                         {project.images.map((image, index) => (
-                          <CarouselItem key={index}>
+                          <CarouselItem key={index} className="flex items-center justify-center">
                             <img 
                               src={image} 
                               alt={`${project.title} - Image ${index + 1}`}
-                              className="w-full h-full object-contain"
+                              className="max-w-full max-h-full w-auto h-auto object-contain"
                             />
                           </CarouselItem>
                         ))}
