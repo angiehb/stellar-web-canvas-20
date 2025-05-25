@@ -66,7 +66,7 @@ const projectCases: ProjectCase[] = [
       "Increased customer lifetime value by 230%",
       "Established predictable revenue forecasting model"
     ],
-    images: ["/lovable-uploads/8c951e23-056b-4214-9cfd-ddad29492971.png"]
+    images: ["/lovable-uploads/8c951e23-056b-4214-9cfd-ddad29492971.png", "/lovable-uploads/8cb9a976-14d7-49bb-8b8d-04d1382f3e9b.png"]
   }
 ];
 
