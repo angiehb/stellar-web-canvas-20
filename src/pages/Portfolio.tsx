@@ -49,7 +49,7 @@ const projectCases: ProjectCase[] = [
       "Achieved 78% GMV growth year-over-year",
       "Boosted conversion rates from 3.90% to 5.93%"
     ],
-    images: ["/lovable-uploads/6c7c5638-2f86-4358-9f2c-981c7e4ce691.png"]
+    images: ["/lovable-uploads/20a03e9a-5e63-4405-9c0f-2eb2e009c5e5.png", "/lovable-uploads/6c7c5638-2f86-4358-9f2c-981c7e4ce691.png"]
   },
   {
     id: "subscription-model",
