@@ -150,7 +150,7 @@ const Portfolio = () => {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative w-full min-h-[400px] rounded-lg overflow-hidden bg-muted flex items-center justify-center">
+                <div className="relative w-full min-h-[400px] rounded-lg overflow-hidden bg-muted flex items-start justify-center">
                   {project.images.length === 1 ? (
                     <img 
                       src={project.images[0]} 
@@ -161,7 +161,7 @@ const Portfolio = () => {
                     <Carousel className="w-full h-full">
                       <CarouselContent>
                         {project.images.map((image, index) => (
-                          <CarouselItem key={index} className="flex items-center justify-center">
+                          <CarouselItem key={index} className="flex items-start justify-center">
                             <img 
                               src={image} 
                               alt={`${project.title} - Image ${index + 1}`}
