@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ interface ProjectCase {
   problem: string;
   solution: string;
   impact: string[];
-  imageUrl: string;
+  images: string[];
 }
 
 const projectCases: ProjectCase[] = [
@@ -34,7 +35,7 @@ const projectCases: ProjectCase[] = [
       "Successfully scaled platform to all Gap brands internationally and domestically from hundreds of users to thousands",
       "Supported $800M business growth across 45 countries"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2712"
+    images: ["https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2712"]
   },
   {
     id: "marketplace-optimization",
@@ -49,7 +50,7 @@ const projectCases: ProjectCase[] = [
       "Achieved 78% GMV growth year-over-year",
       "Boosted conversion rates from 3.90% to 5.93%"
     ],
-    imageUrl: "/lovable-uploads/b1bd7ede-318e-4f0d-976e-7c32a2005701.png"
+    images: ["/lovable-uploads/b1bd7ede-318e-4f0d-976e-7c32a2005701.png"]
   },
   {
     id: "subscription-model",
@@ -65,7 +66,7 @@ const projectCases: ProjectCase[] = [
       "Increased customer lifetime value by 230%",
       "Established predictable revenue forecasting model"
     ],
-    imageUrl: "/lovable-uploads/8c951e23-056b-4214-9cfd-ddad29492971.png"
+    images: ["/lovable-uploads/8c951e23-056b-4214-9cfd-ddad29492971.png"]
   }
 ];
 
@@ -151,11 +152,29 @@ const Portfolio = () => {
                   </Card>
                 </div>
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-                  <img 
-                    src={project.imageUrl} 
-                    alt={project.title}
-                    className="w-full h-full object-contain bg-white"
-                  />
+                  {project.images.length === 1 ? (
+                    <img 
+                      src={project.images[0]} 
+                      alt={project.title}
+                      className="w-full h-full object-contain bg-white"
+                    />
+                  ) : (
+                    <Carousel className="w-full h-full">
+                      <CarouselContent>
+                        {project.images.map((image, index) => (
+                          <CarouselItem key={index}>
+                            <img 
+                              src={image} 
+                              alt={`${project.title} - Image ${index + 1}`}
+                              className="w-full h-full object-contain bg-white"
+                            />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-2" />
+                      <CarouselNext className="right-2" />
+                    </Carousel>
+                  )}
                 </div>
               </div>
             </TabsContent>
