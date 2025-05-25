@@ -35,7 +35,7 @@ const projectCases: ProjectCase[] = [{
   problem: "After securing a $14M Series A round of funding, this 2-sided food-tech marketplace was struggling to retain customers. Analysis showed that while Chef (supply side) retention was near 100%, only 29.4% of Diners (demand side) were placing second orders. Customer acquisition costs were extremely high signaling a product-market fit issue.",
   solution: "Conducted deep user behavior and customer insights research and analysis to understand why customers were not converting and/or not returning. Defined a customer-centric roadmap that prioritized articulating value and uniqueness of the product while removing user friction. Worked with marketing to improve messaging and targeting.",
   impact: ["Improved 2nd order rates from 29.4% to 40.7%", "Achieved 78% GMV growth year-over-year", "Boosted conversion rates from 3.90% to 5.93%"],
-  images: ["/lovable-uploads/eb4a981e-1c13-427d-b968-d693a164bfc6.png", "/lovable-uploads/6c7c5638-2f86-4358-9f2c-981c7e4ce691.png"]
+  images: ["/lovable-uploads/6d4a4d92-27fd-4c84-89a0-f928a5482182.png", "/lovable-uploads/eb4a981e-1c13-427d-b968-d693a164bfc6.png", "/lovable-uploads/6c7c5638-2f86-4358-9f2c-981c7e4ce691.png"]
 }, {
   id: "subscription-model",
   title: "Subscription Product Launch",
