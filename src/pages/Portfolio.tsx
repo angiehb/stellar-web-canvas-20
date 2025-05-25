@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -150,7 +151,7 @@ const Portfolio = () => {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative w-full min-h-[400px] rounded-lg overflow-hidden bg-muted flex items-start justify-center">
+                <div className="relative w-full min-h-[400px] rounded-lg overflow-hidden bg-background flex items-start justify-center">
                   {project.images.length === 1 ? (
                     <img 
                       src={project.images[0]} 
