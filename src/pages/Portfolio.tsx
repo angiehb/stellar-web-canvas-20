@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -20,7 +21,7 @@ interface ProjectCase {
 const projectCases: ProjectCase[] = [
   {
     id: "digital-transformation",
-    title: "B2B SaaS Platform Development",
+    title: "Digital Transformation",
     company: "Gap Inc.",
     period: "2014-2019",
     tags: ["B2B SaaS", "Product Management", "International Business"],
