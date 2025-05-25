@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -21,17 +20,18 @@ interface ProjectCase {
 const projectCases: ProjectCase[] = [
   {
     id: "digital-transformation",
-    title: "Digital Transformation Initiative",
-    company: "Enterprise Financial Services",
-    period: "2022-2023",
-    tags: ["Digital Strategy", "UX Design", "Product Management"],
-    problem: "The client's legacy financial platform was experiencing high bounce rates (68%) and low conversion (1.2%). Customer feedback indicated frustration with complex workflows and outdated UI, directly impacting revenue.",
-    solution: "Led end-to-end redesign of the customer journey with a focus on simplification. Implemented a modular design system, reduced steps to complete key tasks by 40%, and introduced personalized dashboards based on user research.",
+    title: "B2B SaaS Platform Development",
+    company: "Gap Inc.",
+    period: "2014-2019",
+    tags: ["B2B SaaS", "Product Management", "International Business"],
+    problem: "Gap Inc.'s $800M International Franchise business with 400+ locations across 45 countries lacked digital infrastructure to support franchisees effectively. Manual processes were limiting productivity and growth potential for this critical business segment.",
+    solution: "Led cross-functional product teams to design and deliver comprehensive B2B SaaS platforms specifically for international franchise operations. Developed user-centric solutions addressing franchisee workflow pain points, scalability requirements, and multi-market needs across all Gap brands.",
     impact: [
-      "Reduced bounce rate from 68% to 29%",
-      "Increased conversion rate by 145%",
-      "Improved customer satisfaction score from 3.2/5 to 4.6/5",
-      "Decreased support tickets by 37%"
+      "Achieved near 100% platform adoption across all franchise locations",
+      "Maintained 90% monthly active users consistently",
+      "Delivered 75% increase in franchisee productivity",
+      "Successfully scaled platform to all Gap brands internationally and domestically",
+      "Supported $800M business growth across 45 countries"
     ],
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2712"
   },
