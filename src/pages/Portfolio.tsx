@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -105,8 +106,8 @@ const Portfolio = () => {
 
           {projectCases.map((project) => (
             <TabsContent key={project.id} value={project.id} className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
                   <Card>
                     <CardHeader>
                       <div className="flex justify-between items-start mb-2">
@@ -150,7 +151,7 @@ const Portfolio = () => {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
+                <div className="md:col-span-2 relative aspect-video rounded-lg overflow-hidden bg-muted">
                   <img 
                     src={project.imageUrl} 
                     alt={project.title}
@@ -167,3 +168,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
