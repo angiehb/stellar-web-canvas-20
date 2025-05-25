@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -50,7 +49,7 @@ const projectCases: ProjectCase[] = [
       "Achieved 78% GMV growth year-over-year",
       "Boosted conversion rates from 3.90% to 5.93%"
     ],
-    images: ["/lovable-uploads/9691595a-5744-4475-812d-d6f435e09fae.png"]
+    images: ["/lovable-uploads/6c7c5638-2f86-4358-9f2c-981c7e4ce691.png"]
   },
   {
     id: "subscription-model",
