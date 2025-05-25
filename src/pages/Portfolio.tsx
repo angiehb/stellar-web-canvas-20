@@ -156,7 +156,7 @@ const Portfolio = () => {
                     <img 
                       src={project.images[0]} 
                       alt={project.title}
-                      className="w-full h-full object-contain bg-white"
+                      className="w-full h-full object-cover"
                     />
                   ) : (
                     <Carousel className="w-full h-full">
@@ -166,7 +166,7 @@ const Portfolio = () => {
                             <img 
                               src={image} 
                               alt={`${project.title} - Image ${index + 1}`}
-                              className="w-full h-full object-contain bg-white"
+                              className="w-full h-full object-cover"
                             />
                           </CarouselItem>
                         ))}
