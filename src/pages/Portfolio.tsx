@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+
 interface ProjectCase {
   id: string;
   title: string;
@@ -120,7 +121,11 @@ const Portfolio = () => {
                   {project.images.length === 1 ? <img src={project.images[0]} alt={project.title} className="w-full h-auto object-contain" /> : <Carousel className="w-full">
                       <CarouselContent>
                         {project.images.map((image, index) => <CarouselItem key={index}>
-                            <img src={image} alt={`${project.title} - Image ${index + 1}`} className="w-full h-auto object-contain" />
+                            <img 
+                              src={image} 
+                              alt={`${project.title} - Image ${index + 1}`} 
+                              className={`w-full h-auto object-contain ${index === 0 ? 'scale-90' : ''}`} 
+                            />
                           </CarouselItem>)}
                       </CarouselContent>
                       <CarouselPrevious className="left-2" />
