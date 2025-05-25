@@ -1,5 +1,3 @@
-
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -43,7 +41,7 @@ const projectCases: ProjectCase[] = [
     company: "WoodSpoon",
     period: "2021-2022",
     tags: ["Marketplace", "Growth", "Analytics"],
-    problem: "The food delivery marketplace was struggling with chef retention and low re-order rates. Analysis showed 40% of chefs churned within 3 months, and only 29.4% of customers placed a second order.",
+    problem: "After securing a $14M Series A round of funding, this 2-sided food-tech marketplace was struggling to retain customers. Analysis showed that while Chef (supply side) retention was near 100%, only 29.4% of Diners (demand side) were placing second orders. Customer acquisition costs were extremely high signaling a product-market fit issue.",
     solution: "Designed and implemented a comprehensive chef success program with better onboarding tools, performance analytics dashboard, and simplified menu management. For customers, introduced personalized recommendations and loyalty features.",
     impact: [
       "Increased chef retention by 65%",
