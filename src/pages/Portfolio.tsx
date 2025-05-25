@@ -150,7 +150,7 @@ const Portfolio = () => {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted">
                   <img 
                     src={project.imageUrl} 
                     alt={project.title}
