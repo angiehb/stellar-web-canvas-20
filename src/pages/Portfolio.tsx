@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -50,7 +49,7 @@ const projectCases: ProjectCase[] = [
       "Achieved 78% GMV growth year-over-year",
       "Boosted conversion rates from 3.90% to 5.93%"
     ],
-    images: ["/lovable-uploads/28dd94db-370e-4971-9d7d-58a550dcdde4.png"]
+    images: ["/lovable-uploads/b1bd7ede-318e-4f0d-976e-7c32a2005701.png"]
   },
   {
     id: "subscription-model",
@@ -66,7 +65,7 @@ const projectCases: ProjectCase[] = [
       "Increased customer lifetime value by 230%",
       "Established predictable revenue forecasting model"
     ],
-    images: ["/lovable-uploads/28dd94db-370e-4971-9d7d-58a550dcdde4.png", "/lovable-uploads/8cb9a976-14d7-49bb-8b8d-04d1382f3e9b.png"]
+    images: ["/lovable-uploads/572e7860-20e4-4229-a8f8-eeca327e8932.png", "/lovable-uploads/8cb9a976-14d7-49bb-8b8d-04d1382f3e9b.png"]
   }
 ];
 
