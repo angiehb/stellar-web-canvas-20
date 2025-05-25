@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -31,7 +32,7 @@ const projectCases: ProjectCase[] = [
       "Achieved near 100% platform adoption across all franchise locations",
       "Maintained 90% monthly active users consistently",
       "Delivered 75% increase in franchisee productivity",
-      "Successfully scaled platform to all Gap brands internationally and domestically",
+      "Successfully scaled platform to all Gap brands internationally and domestically from hundreds of users to thousands",
       "Supported $800M business growth across 45 countries"
     ],
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2712"
