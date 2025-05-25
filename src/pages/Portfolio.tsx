@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -155,7 +156,7 @@ const Portfolio = () => {
                     <img 
                       src={project.images[0]} 
                       alt={project.title}
-                      className="max-w-full max-h-full w-auto h-auto object-contain"
+                      className="max-w-[80%] max-h-[300px] w-auto h-auto object-contain"
                     />
                   ) : (
                     <Carousel className="w-full h-full">
@@ -165,7 +166,7 @@ const Portfolio = () => {
                             <img 
                               src={image} 
                               alt={`${project.title} - Image ${index + 1}`}
-                              className="max-w-full max-h-full w-auto h-auto object-contain"
+                              className="max-w-[80%] max-h-[300px] w-auto h-auto object-contain"
                             />
                           </CarouselItem>
                         ))}
