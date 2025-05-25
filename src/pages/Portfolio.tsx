@@ -42,7 +42,7 @@ const projectCases: ProjectCase[] = [
     period: "2021-2022",
     tags: ["Marketplace", "Growth", "Analytics"],
     problem: "After securing a $14M Series A round of funding, this 2-sided food-tech marketplace was struggling to retain customers. Analysis showed that while Chef (supply side) retention was near 100%, only 29.4% of Diners (demand side) were placing second orders. Customer acquisition costs were extremely high signaling a product-market fit issue.",
-    solution: "Designed and implemented a comprehensive chef success program with better onboarding tools, performance analytics dashboard, and simplified menu management. For customers, introduced personalized recommendations and loyalty features.",
+    solution: "Conducted deep user behavior and customer insights research and analysis to understand why customers were not converting and/or not returning. Defined a customer-centric roadmap that prioritized articulating value and uniqueness of the product while removing user friction. Worked with marketing to improve messaging and targeting.",
     impact: [
       "Increased chef retention by 65%",
       "Improved 2nd order rates from 29.4% to 40.7%",
