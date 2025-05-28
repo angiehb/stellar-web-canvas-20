@@ -25,7 +25,7 @@ const projectCases: ProjectCase[] = [{
   problem: "Gap Inc.'s $800M International Franchise business with 400+ locations across 45 countries lacked digital infrastructure to support franchisees effectively. Manual processes were limiting productivity and growth potential for this critical business segment.",
   solution: "Led cross-functional product teams to design and deliver comprehensive B2B SaaS platforms specifically for international franchise operations. Developed user-centric solutions addressing franchisee workflow pain points, scalability requirements, and multi-market needs across all Gap brands.",
   impact: ["Achieved near 100% platform adoption across all franchise locations", "Maintained 90% monthly active users consistently", "Delivered 75% increase in franchisee productivity", "Successfully scaled platform to all Gap brands internationally and domestically from hundreds of users to thousands", "Supported $800M business growth across 45 countries"],
-  images: ["https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2712"]
+  images: ["/lovable-uploads/472a7063-1906-43ff-860d-06d7a00883f7.png"]
 }, {
   id: "marketplace-optimization",
   title: "Marketplace Growth Strategy",
