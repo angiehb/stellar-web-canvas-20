@@ -72,7 +72,14 @@ const EducationSection = () => {
             </div>
             <div className="mt-6 border-l-2 border-primary/20 pl-4">
               <h4 className="text-lg font-medium">Publication</h4>
-              <p className="text-gray-700">"Why the Right Digital Strategy Leads To Successful Direct-To-Consumer Brands"</p>
+              <a 
+                href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-700 hover:text-primary hover:underline transition-colors"
+              >
+                "Why the Right Digital Strategy Leads To Successful Direct-To-Consumer Brands"
+              </a>
               <p className="text-gray-600 text-sm">Forbes, March 29, 2022</p>
             </div>
           </div>
