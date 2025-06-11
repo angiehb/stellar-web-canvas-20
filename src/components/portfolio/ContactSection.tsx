@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, Linkedin, Send } from "lucide-react";
+import { Linkedin, Send } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -47,14 +47,6 @@ const ContactSection = () => {
                 </p>
               </div>
               <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <Mail className="h-6 w-6 text-accent" />
-                  <span>angiehb@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <MapPin className="h-6 w-6 text-accent" />
-                  <span>New Jersey</span>
-                </div>
                 <div className="flex items-center space-x-4">
                   <Linkedin className="h-6 w-6 text-accent" />
                   <a href="https://linkedin.com/in/angiehbugueiro" target="_blank" rel="noopener noreferrer" className="hover:underline">
