@@ -55,7 +55,7 @@ const projectCases: ProjectCase[] = [{
   problem: "Traditional retail models were being disrupted, and beauty brands needed to explore innovative ways to connect with customers beyond physical stores. The question was whether virtual selling could become a viable channel for premium beauty products.",
   solution: "Pioneered virtual selling initiatives to create personalized digital shopping experiences. Explored how technology could replicate the consultative, personal touch of in-store beauty consultations while scaling to reach customers anywhere. This work was <a href='https://retailwire.com/discussion/is-virtual-selling-set-to-take-off/' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>featured in RetailWire</a> discussing the future of virtual selling in retail.",
   impact: ["Established new digital channel for personalized customer engagement", "Pioneered virtual consultation model in beauty industry", "Enhanced customer experience through technology-enabled personalization"],
-  images: []
+  images: ["/lovable-uploads/glossier-virtual-selling.jpg"]
 }];
 const Portfolio = () => {
   return <div className="min-h-screen bg-background">
