@@ -1,6 +1,8 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { GraduationCap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GraduationCap, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Education {
   degree: string;
@@ -81,6 +83,15 @@ const EducationSection = () => {
                 "Why the Right Digital Strategy Leads To Successful Direct-To-Consumer Brands"
               </a>
               <p className="text-gray-600 text-sm">Forbes, March 29, 2022</p>
+            </div>
+
+            <div className="mt-8 text-center">
+              <Button asChild>
+                <Link to="/experience#professional-activities" className="flex items-center gap-2">
+                  View All Publications & Activities
+                  <ExternalLink size={16} />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
