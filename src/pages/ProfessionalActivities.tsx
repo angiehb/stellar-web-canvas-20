@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, GraduationCap, Users, FileText } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import forbesImage from "@/assets/forbes-dtc-digital-strategy.jpg";
-import mediumImage from "@/assets/medium-startup-buildings.png";
+import mediumImage from "@/assets/medium-startup-buildings.webp";
 import columbiaLogo from "@/assets/columbia-business-school-logo.png";
 import founderInstituteLogo from "@/assets/founder-institute-logo.png";
 
