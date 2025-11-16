@@ -157,7 +157,7 @@ const ProfessionalActivities = () => {
             <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-start gap-4">
-                  <img src={columbiaLogo} alt="Columbia Business School" className="h-16 w-auto flex-shrink-0" />
+                  <img src={columbiaLogo} alt="Columbia Business School" className="h-8 w-auto flex-shrink-0" />
                   <div>
                     <CardTitle className="text-xl font-serif">
                       <a 
