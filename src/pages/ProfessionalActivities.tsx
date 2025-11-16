@@ -156,11 +156,13 @@ const ProfessionalActivities = () => {
             
             <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="flex items-center gap-4 mb-2">
-                  <img src={columbiaLogo} alt="Columbia Business School" className="h-12 w-auto" />
+                <div className="flex items-start gap-4">
+                  <img src={columbiaLogo} alt="Columbia Business School" className="h-16 w-auto flex-shrink-0" />
+                  <div>
+                    <CardTitle className="text-2xl font-serif">Columbia Business School</CardTitle>
+                    <CardDescription className="text-base">Guest Lecturer | 2023 - Present</CardDescription>
+                  </div>
                 </div>
-                <CardTitle className="text-2xl font-serif">Columbia Business School</CardTitle>
-                <CardDescription className="text-base">Guest Lecturer | 2023 - Present</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
