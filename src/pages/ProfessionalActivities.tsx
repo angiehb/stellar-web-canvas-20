@@ -3,6 +3,8 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Link } from "react-router-dom";
 import { ArrowLeft, GraduationCap, Users, FileText } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import forbesImage from "@/assets/forbes-dtc-digital-strategy.jpg";
+import mediumImage from "@/assets/medium-startup-buildings.png";
 
 const ProfessionalActivities = () => {
   return (
@@ -67,7 +69,14 @@ const ProfessionalActivities = () => {
             </div>
             
             <div className="space-y-6">
-              <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+              <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="aspect-video w-full overflow-hidden">
+                  <img 
+                    src={forbesImage} 
+                    alt="Digital strategy and e-commerce concept with shopping cart icons on keyboard" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
                   <CardTitle className="text-2xl font-serif">
                     <a 
@@ -97,7 +106,14 @@ const ProfessionalActivities = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+              <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="aspect-video w-full overflow-hidden">
+                  <img 
+                    src={mediumImage} 
+                    alt="Looking up at modern office buildings and skyscrapers" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
                   <CardTitle className="text-2xl font-serif">
                     <a 
