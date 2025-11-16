@@ -68,7 +68,7 @@ const Portfolio = () => {
               Back to Home
             </Link>
           </Button>
-          <h1 className="text-4xl font-bold font-serif">Project Portfolio</h1>
+          <h1 className="text-4xl font-bold font-serif">Portfolio</h1>
           <p className="text-muted-foreground mt-2 max-w-2xl">
             Selected case studies highlighting problems solved, solutions implemented, and measurable results delivered
           </p>
