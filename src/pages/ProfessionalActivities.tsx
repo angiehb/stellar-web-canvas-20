@@ -159,7 +159,7 @@ const ProfessionalActivities = () => {
                 <div className="flex items-start gap-4">
                   <img src={columbiaLogo} alt="Columbia Business School" className="h-16 w-auto flex-shrink-0" />
                   <div>
-                    <CardTitle className="text-2xl font-serif">
+                    <CardTitle className="text-xl font-serif">
                       <a 
                         href="https://business.columbia.edu/" 
                         target="_blank" 
@@ -212,7 +212,7 @@ const ProfessionalActivities = () => {
                 <div className="flex items-start gap-4">
                   <img src={founderInstituteLogo} alt="Founder Institute" className="h-8 w-auto flex-shrink-0" />
                   <div>
-                    <CardTitle className="text-2xl font-serif">
+                    <CardTitle className="text-xl font-serif">
                       <a 
                         href="https://fi.co/" 
                         target="_blank" 
