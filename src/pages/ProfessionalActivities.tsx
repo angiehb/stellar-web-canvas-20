@@ -5,6 +5,7 @@ import { ArrowLeft, GraduationCap, Users, FileText } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import forbesImage from "@/assets/forbes-dtc-digital-strategy.jpg";
 import mediumImage from "@/assets/medium-startup-buildings.png";
+import columbiaLogo from "@/assets/columbia-business-school-logo.png";
 
 const ProfessionalActivities = () => {
   return (
@@ -154,6 +155,9 @@ const ProfessionalActivities = () => {
             
             <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <img src={columbiaLogo} alt="Columbia Business School" className="h-12 w-auto" />
+                </div>
                 <CardTitle className="text-2xl font-serif">Columbia Business School</CardTitle>
                 <CardDescription className="text-base">Guest Lecturer | 2023 - Present</CardDescription>
               </CardHeader>
