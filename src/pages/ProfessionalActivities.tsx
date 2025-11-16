@@ -66,35 +66,67 @@ const ProfessionalActivities = () => {
               <h2 className="text-3xl font-bold font-serif">Publications</h2>
             </div>
             
-            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif">
-                  <a 
-                    href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-foreground hover:text-primary transition-colors"
-                  >
-                    "Why the Right Digital Strategy Leads To Successful Direct-To-Consumer Brands"
-                  </a>
-                </CardTitle>
-                <CardDescription className="text-base">Forbes, March 29, 2022</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  An exploration of how digital-first brands can build sustainable competitive advantages through strategic product and technology decisions. This article examines the critical intersection of digital strategy, customer experience, and business outcomes in the DTC landscape.
-                </p>
-                <Button asChild variant="outline">
-                  <a 
-                    href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    Read Full Article
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
+            <div className="space-y-6">
+              <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-serif">
+                    <a 
+                      href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      "Why the Right Digital Strategy Leads To Successful Direct-To-Consumer Brands"
+                    </a>
+                  </CardTitle>
+                  <CardDescription className="text-base">Forbes, March 29, 2022</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    An exploration of how digital-first brands can build sustainable competitive advantages through strategic product and technology decisions. This article examines the critical intersection of digital strategy, customer experience, and business outcomes in the DTC landscape.
+                  </p>
+                  <Button asChild variant="outline">
+                    <a 
+                      href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Read Full Article
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-serif">
+                    <a 
+                      href="https://medium.com/@angiehb/what-i-learned-from-my-year-at-an-early-stage-startup-4fa1568802d6" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      "What I Learned From My Year at an Early-Stage Startup"
+                    </a>
+                  </CardTitle>
+                  <CardDescription className="text-base">Medium</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Key lessons and insights from navigating the challenges and opportunities of working at an early-stage startup, exploring the unique dynamics of building products in a fast-paced, resource-constrained environment.
+                  </p>
+                  <Button asChild variant="outline">
+                    <a 
+                      href="https://medium.com/@angiehb/what-i-learned-from-my-year-at-an-early-stage-startup-4fa1568802d6" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Read Full Article
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </section>
 
           {/* Lecturing Section */}
