@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -87,6 +88,21 @@ const HeroSection = () => {
               asChild
             >
               <Link to="/portfolio">View Portfolio</Link>
+            </Button>
+            <Button 
+              size="lg" 
+              className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
+              asChild
+            >
+              <a 
+                href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FileText size={18} />
+                Forbes Publication
+              </a>
             </Button>
             <Button 
               size="lg" 
