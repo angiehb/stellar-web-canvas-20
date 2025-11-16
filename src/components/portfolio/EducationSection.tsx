@@ -87,7 +87,7 @@ const EducationSection = () => {
 
             <div className="mt-8 text-center">
               <Button asChild>
-                <Link to="/experience#professional-activities" className="flex items-center gap-2">
+                <Link to="/professional-activities" className="flex items-center gap-2">
                   View All Publications & Activities
                   <ExternalLink size={16} />
                 </Link>
