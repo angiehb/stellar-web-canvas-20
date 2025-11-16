@@ -87,7 +87,7 @@ const HeroSection = () => {
               className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
               asChild
             >
-              <Link to="/portfolio">View Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </Button>
             <Button 
               size="lg" 
