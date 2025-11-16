@@ -178,6 +178,49 @@ const ExperiencePage = () => {
               );
             })}
           </div>
+
+          {/* Professional Activities Section */}
+          <div id="professional-activities" className="mt-16">
+            <h2 className="text-3xl font-bold mb-8 font-serif text-center">Professional Activities</h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl font-serif">Lecturing</CardTitle>
+                  <CardDescription className="text-base">Columbia Business School | 2023 - Present</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">Guest lecturer on Product Management & Innovation</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl font-serif">Mentorship</CardTitle>
+                  <CardDescription className="text-base">Founders Institute | 2023 - Present</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">Providing product strategy and execution mentorship to start-ups</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mt-8 bg-white border-none shadow-md hover:shadow-lg transition-shadow max-w-4xl mx-auto">
+              <CardHeader>
+                <CardTitle className="text-xl font-serif">Publications</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a 
+                  href="https://www.forbes.com/sites/columbiabusinessschool/2022/03/29/why-the-right-digital-strategy-leads-to-successful-direct-to-consumer-brands/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-700 hover:text-primary hover:underline transition-colors text-lg"
+                >
+                  "Why the Right Digital Strategy Leads To Successful Direct-To-Consumer Brands"
+                </a>
+                <p className="text-gray-600 text-sm mt-2">Forbes, March 29, 2022</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
