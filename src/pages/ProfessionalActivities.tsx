@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 import forbesImage from "@/assets/forbes-dtc-digital-strategy.jpg";
 import mediumImage from "@/assets/medium-startup-buildings.png";
 import columbiaLogo from "@/assets/columbia-business-school-logo.png";
-import foundersInstituteLogo from "@/assets/founders-institute-logo.png";
+import founderInstituteLogo from "@/assets/founder-institute-logo.png";
 
 const ProfessionalActivities = () => {
   return (
@@ -201,9 +201,18 @@ const ProfessionalActivities = () => {
             <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-start gap-4">
-                  <img src={foundersInstituteLogo} alt="Founders Institute" className="h-8 w-auto flex-shrink-0" />
+                  <img src={founderInstituteLogo} alt="Founder Institute" className="h-8 w-auto flex-shrink-0" />
                   <div>
-                    <CardTitle className="text-2xl font-serif">Founders Institute</CardTitle>
+                    <CardTitle className="text-2xl font-serif">
+                      <a 
+                        href="https://fi.co/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-foreground hover:text-primary transition-colors"
+                      >
+                        Founder Institute
+                      </a>
+                    </CardTitle>
                     <CardDescription className="text-base">Product Strategy Mentor | 2023 - Present</CardDescription>
                   </div>
                 </div>
