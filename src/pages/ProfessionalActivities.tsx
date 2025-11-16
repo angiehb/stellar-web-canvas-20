@@ -145,7 +145,7 @@ const ProfessionalActivities = () => {
                 <p className="text-muted-foreground mb-4">
                   Guest lecturer on Product Management & Innovation, sharing real-world insights and case studies from building digital products at scale across various industries including retail, food-tech, and beauty.
                 </p>
-                <div className="bg-accent/30 p-4 rounded-lg">
+                <div className="bg-accent/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">Topics Covered:</h4>
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li>• Product strategy and roadmap prioritization</li>
@@ -155,6 +155,15 @@ const ProfessionalActivities = () => {
                     <li>• Innovation in retail and e-commerce</li>
                   </ul>
                 </div>
+                <Button asChild variant="outline">
+                  <a 
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7183460895455387648/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    View LinkedIn Post
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           </section>
