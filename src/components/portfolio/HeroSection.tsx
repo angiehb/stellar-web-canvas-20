@@ -80,7 +80,7 @@ const HeroSection = () => {
               className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
               onClick={() => document.getElementById('professional-experience')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Professional Experience
+              Experience
             </Button>
             <Button 
               size="lg" 
