@@ -94,8 +94,7 @@ const HeroSection = () => {
               className="bg-white/20 text-white hover:bg-accent hover:text-accent-foreground border border-white/30" 
               asChild
             >
-              <Link to="/experience#professional-activities" className="flex items-center gap-2">
-                <FileText size={18} />
+              <Link to="/experience#professional-activities">
                 Publications
               </Link>
             </Button>
