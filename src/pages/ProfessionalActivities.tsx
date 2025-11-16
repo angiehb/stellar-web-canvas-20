@@ -2,10 +2,43 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, GraduationCap, Users, FileText } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const ProfessionalActivities = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Professional Activities - Angie Hanna-Bugueiro | Product Leadership & Thought Leadership</title>
+        <meta 
+          name="description" 
+          content="Explore Angie Hanna-Bugueiro's thought leadership, publications, guest lectures at Columbia Business School, and mentorship work with Founders Institute. Learn from a seasoned product leader." 
+        />
+        <meta 
+          name="keywords" 
+          content="Angie Hanna-Bugueiro, product management, thought leadership, Columbia Business School, Forbes publication, digital strategy, DTC brands, startup mentorship, Founders Institute, product strategy" 
+        />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Professional Activities - Angie Hanna-Bugueiro" />
+        <meta 
+          property="og:description" 
+          content="Thought leadership, publications, and mentorship from SVP/VP Digital Product & Design Leader Angie Hanna-Bugueiro." 
+        />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Professional Activities - Angie Hanna-Bugueiro" />
+        <meta 
+          name="twitter:description" 
+          content="Thought leadership, publications, and mentorship from SVP/VP Digital Product & Design Leader Angie Hanna-Bugueiro." 
+        />
+        
+        {/* Additional SEO */}
+        <meta name="author" content="Angie Hanna-Bugueiro" />
+        <link rel="canonical" href="https://yoursite.com/professional-activities" />
+      </Helmet>
+      
       {/* Header */}
       <div className="bg-primary/5 border-b">
         <div className="container py-6">
