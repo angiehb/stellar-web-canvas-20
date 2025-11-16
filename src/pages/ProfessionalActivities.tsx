@@ -159,7 +159,16 @@ const ProfessionalActivities = () => {
                 <div className="flex items-start gap-4">
                   <img src={columbiaLogo} alt="Columbia Business School" className="h-16 w-auto flex-shrink-0" />
                   <div>
-                    <CardTitle className="text-2xl font-serif">Columbia Business School</CardTitle>
+                    <CardTitle className="text-2xl font-serif">
+                      <a 
+                        href="https://business.columbia.edu/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-foreground hover:text-primary transition-colors"
+                      >
+                        Columbia Business School
+                      </a>
+                    </CardTitle>
                     <CardDescription className="text-base">Guest Lecturer | 2023 - Present</CardDescription>
                   </div>
                 </div>
