@@ -17,6 +17,16 @@ interface ProjectCase {
   images: string[];
 }
 const projectCases: ProjectCase[] = [{
+  id: "digital-innovation",
+  title: "Digital Innovation",
+  company: "Glossier",
+  period: "2020",
+  tags: ["Virtual Selling", "Innovation", "Retail Technology"],
+  problem: "Traditional retail models were being disrupted, and beauty brands needed to explore innovative ways to connect with customers beyond physical stores. The question was whether virtual selling could become a viable channel for premium beauty products.",
+  solution: "Pioneered virtual selling initiatives to create personalized digital shopping experiences. Explored how technology could replicate the consultative, personal touch of in-store beauty consultations while scaling to reach customers anywhere. This work was <a href='https://retailwire.com/discussion/is-virtual-selling-set-to-take-off/' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>featured in RetailWire</a> discussing the future of virtual selling in retail.",
+  impact: ["Established new digital channel for personalized customer engagement", "Pioneered virtual consultation model in beauty industry", "Enhanced customer experience through technology-enabled personalization"],
+  images: ["/lovable-uploads/glossier-live-edit-instagram.jpeg", "/lovable-uploads/glossier-virtual-selling.jpg"]
+}, {
   id: "digital-transformation",
   title: "Digital Transformation",
   company: "Gap Inc.",
@@ -46,16 +56,6 @@ const projectCases: ProjectCase[] = [{
   solution: "Led cross-functional team to define tiered subscription model with clear value proposition at each level. Designed seamless upgrade paths, implemented cohort analysis framework, and created engagement-triggered retention campaigns.",
   impact: ["Achieved 89% retention rate after 6 months", "2.7% conversion rate from free to paid (industry average: 1.5%)", "Increased customer lifetime value by 230%", "Established predictable revenue forecasting model"],
   images: ["/lovable-uploads/572e7860-20e4-4229-a8f8-eeca327e8932.png", "/lovable-uploads/8cb9a976-14d7-49bb-8b8d-04d1382f3e9b.png"]
-}, {
-  id: "digital-innovation",
-  title: "Digital Innovation",
-  company: "Glossier",
-  period: "2020",
-  tags: ["Virtual Selling", "Innovation", "Retail Technology"],
-  problem: "Traditional retail models were being disrupted, and beauty brands needed to explore innovative ways to connect with customers beyond physical stores. The question was whether virtual selling could become a viable channel for premium beauty products.",
-  solution: "Pioneered virtual selling initiatives to create personalized digital shopping experiences. Explored how technology could replicate the consultative, personal touch of in-store beauty consultations while scaling to reach customers anywhere. This work was <a href='https://retailwire.com/discussion/is-virtual-selling-set-to-take-off/' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline'>featured in RetailWire</a> discussing the future of virtual selling in retail.",
-  impact: ["Established new digital channel for personalized customer engagement", "Pioneered virtual consultation model in beauty industry", "Enhanced customer experience through technology-enabled personalization"],
-  images: ["/lovable-uploads/glossier-live-edit-instagram.jpeg", "/lovable-uploads/glossier-virtual-selling.jpg"]
 }];
 const Portfolio = () => {
   return <div className="min-h-screen bg-background">
