@@ -70,7 +70,7 @@ const ProfessionalActivities = () => {
             
             <div className="space-y-6">
               <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div className="aspect-video w-full overflow-hidden">
+                <div className="h-32 w-full overflow-hidden">
                   <img 
                     src={forbesImage} 
                     alt="Digital strategy and e-commerce concept with shopping cart icons on keyboard" 
@@ -107,7 +107,7 @@ const ProfessionalActivities = () => {
               </Card>
 
               <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-                <div className="aspect-video w-full overflow-hidden">
+                <div className="h-32 w-full overflow-hidden">
                   <img 
                     src={mediumImage} 
                     alt="Looking up at modern office buildings and skyscrapers" 
